@@ -10,7 +10,8 @@
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
   <!-- link your styles -->
-  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" media="(max-width: 768px)" href="./stylesheets/style.css" />
+  <link rel="stylesheet" media="(min-width: 769px and max-width: 1024px)" href="./stylesheets/style.css">
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
@@ -18,10 +19,11 @@
 
 <body>
   <nav>
-    <div>
+   <div> 
+    <div class = "logo">
       <img src="./images/slack-logo.png" alt="Slack logo" />
-
-      <ul>
+    </div>
+      <ul class="links">
         <li>
           <a href="#">Product</a>
         </li>
@@ -36,16 +38,16 @@
         </li>
       </ul>
     </div>
-
-    <div>
+<div>
+    <div class = "button">
       <button>
-        <img src="./images/icon-search.png" alt="Search icon">
+        <img class="search" src="./images/icon-search.png" alt="Search icon">
       </button>
 
       <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
+        <img class="menu" src="./images/icon-menu.png" alt="Menu icon">
       </button>
-
+</div>
       <ul hidden>
         <li>
           <a href="#">Sign in</a>
@@ -61,12 +63,12 @@
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><b>Slack is free to try</b> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="button2">
+        <button class="b-email" >Sign up with email</button>
 
-        <button>
+        <button class="b-google">
           <img src="./images/logo-google.png" alt="Google logo" />
           <span>Sign up with Google</span>
         </button>
@@ -74,8 +76,8 @@
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div >
+      <img class="slack-img" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
